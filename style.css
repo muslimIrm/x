@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+*{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 320;
+}
+
+.father {
+    display: flex;
+    min-height: 100vh; /* تأكد من أن الحاوية تمتد لتغطية كامل ارتفاع الصفحة */
+    margin-left: 28.5%;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    width: 18.5%;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 0.2px solid rgb(50, 50, 50);
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    margin-left: 10%; /* تعويض عرض الـ header */
+}
+
+
+
+.logo{
+    padding-top: 1rem;
+    padding-bottom: .6rem;
+    
+    height: auto;
+    width: auto;
+}
+.logo svg{
+    
+    width: 3.1rem;
+    height: 1.875rem;
+
+}
+
+.logo svg path{
+    margin-left: 4px;
+}
+.box-continer{
+    height: 100vh;
+}
+.box-continer .box{
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 225px;
+    height: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+
+    
+}
+
+
+.box-continer .box:hover{
+    border-radius: 30px;
+    background: rgb(25, 25, 25);
+}
+
+.box-continer .box .image{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-left: 10px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box-continer .box .image i{
+    font-size: 1.35rem;
+    object-fit: cover;
+}
+
+.box-continer .box .info{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 2rem;
+}
+
+.box-continer .box .info h3{
+    font-size: 1.22rem;
+    
+}
+
+.box-continer .cicle .im{
+    
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.box-continer .poster{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29, 155, 240);
+    color: #fff;
+    border-radius: 20px;
+    width: 233.9px;
+    height: 52px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.box-continer .poster span{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.acounte{
+    cursor: pointer;
+    margin-left: 0;
+    height: 62px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 30px;
+}
+
+.acounte:hover{
+    background: rgb(25, 25, 25);
+}
+
+.acounte .image{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acounte .image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.acounte .info{
+    height: 50px;
+    width: 150px;
+    margin: .5rem;
+}
+
+.acounte .info .name{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.acounte .info .user{
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(99, 99, 99);
+}
+
+.main{
+    width: 37rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.s-header-top{
+    margin-bottom: 3.5rem;
+}
+
+.header-top{
+    position: fixed;
+    border-left: .2px solid rgb(50, 50, 50);
+
+}
+
+.header-top{
+    display: flex;
+    border-bottom: .2px solid rgb(50, 50, 50);
+    width: 38rem;
+    height: 3.4rem;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .text-1{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-top .text-1 h2{
+    font-size: .85rem;
+    font-weight: 580;
+    width: 3.3rem;
+    padding: 1rem;
+    border-bottom: .3rem solid rgb(29, 155, 240);
+}
+
+.header-top .text-1:hover{
+    background: rgb(80, 80, 80);
+}
+.header-top .text-2{
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header-top .text-2 h2{
+    font-size: .9rem;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+
+.header-top .text-2:hover,
+.header-top .text-2:hover h2
+{
+    background: rgb(44, 44, 44);
+    color: white;
+}
+
+.s-post .post{
+    display: flex;
+    height: 6.4rem;
+    width: 100%;
+    border-bottom: 0.2px solid rgb(50, 50, 50);
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.s-post .post .image{
+    width: 50px;
+    height: 50px;
+    padding-right: 1rem;
+}
+
+.s-post .post .image img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.s-post .post .info-post{
+    width: 100%;
+}
+.s-post .post .info-post .input-post{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.s-post .post .info-post .input-post input{
+    border: none;
+    background: none;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1.19rem;
+    box-shadow: none;
+}
+
+.s-post .post .info-post .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.s-post .post .info-post .btns .icons{
+    width: 50%;
+
+}
+
+.s-post .post .info-post .btns .icons i{
+    color: rgb(29, 155, 240);
+    padding-right: 1rem;
+}
+.s-post .post .info-post .btns .icons i svg path{
+    color: rgb(29, 155, 240);
+    width: 16px;
+    height: 10px;
+}
+
+.s-post .post .info-post .btns .icons span i{
+    color: rgb(0, 70, 150);
+}
+
+.s-post .post .info-post .btns .btn-psot{
+    background: rgb(29, 155, 240);
+    border-color: rgba(0,0,0,00);
+    width: 66.75px;
+    height: 33px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts .poster{
+    width: 36.1rem;
+    padding-right: 1.9rem;
+    padding-bottom: 0.6rem;
+    cursor: pointer;
+    border-bottom: 0.2px solid rgb(50, 50, 50);
+}
+
+.posts .poster .info-poster .user-post{
+    display: flex;
+    align-items: center;
+    width: 37rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.posts .poster .info-poster .user-post .logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.posts .poster .info-poster .user-post .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.posts .poster .info-poster .user-post .user-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.posts .poster .info-poster .user-post .user-info .user .name{
+    font-weight: 200;
+    font-weight: bold;
+    cursor: pointer;
+}
+.posts .poster .info-poster .user-post .user-info .user .name:hover{
+    text-decoration: underline;
+}
+
+.posts .poster .info-poster .user-post .user-info .user .user-name{
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(113, 118, 123);
+}
+ .user-post .user-info .more-info i{
+    color: rgb(113, 118, 123);
+    cursor: pointer;
+    padding-right: .5rem;
+}
+
+.posts .poster .info-poster .post-and-image{
+    width: 100%;
+    margin-left: 13%; 
+    margin-top: 0;
+}
+
+
+.posts .poster .info-poster .post-and-image .title-post p{
+    margin-top: 0;
+    width: 87%;
+    font-size: .91rem;
+}
+
+.posts .poster .info-poster .post-and-image .image-post {
+    width: 87%;
+    height: 22rem;
+    margin-bottom: .2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    border-radius: .9rem;
+    border: .15rem solid rgb(50, 50, 50);
+}
+
+.posts .poster .info-poster .post-and-image .image-post img{
+    width: 100%;
+    height: 100%;
+    border-radius: .9rem;
+    border: .15rem solid rgb(50, 50, 50);
+    background-size: cover;
+
+}
+
+.posts .poster .info-poster .post-and-image .interactions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .7rem;
+    width: 87%;
+}
+
+.posts .poster .info-poster .post-and-image .interactions .bd{
+    display: flex;
+}
+
+.posts .poster .info-poster .post-and-image .interactions .bd .b{
+    margin-right: 0.5rem;
+}
+
+.posts .poster .info-poster .post-and-image .interactions .int *{
+    cursor: pointer;
+    color: rgb(113, 118, 123);
+    font-size: 1rem;
+}
+
+.posts .poster .info-poster .post-and-image .interactions .c:hover span,
+.posts .poster .info-poster .post-and-image .interactions .c:hover i,
+.posts .poster .info-poster .post-and-image .interactions .ch:hover span,
+.posts .poster .info-poster .post-and-image .interactions .ch:hover i,
+.posts .poster .info-poster .post-and-image .interactions .bd .b:hover i,
+.posts .poster .info-poster .post-and-image .interactions .bd .d:hover i
+{
+    color: rgb(29, 155, 240);
+}
+
+.posts .poster .info-poster .post-and-image .interactions .h:hover span,
+.posts .poster .info-poster .post-and-image .interactions .h:hover i{
+    color: rgb(249, 24, 128);
+    
+}
+.posts .poster .info-poster .post-and-image .interactions .s:hover span,
+.posts .poster .info-poster .post-and-image .interactions .s:hover i{
+    color: rgb(0, 186, 124);
+    
+}
+
+.section-left{
+    height: 100vh;
+    margin-left: 1rem;
+    border-left: 0.2px solid rgb(50, 50, 50);
+    position: fixed;
+    overflow-y: auto;
+    margin-left: 38rem;
+    margin-top: 0.5rem;
+    
+}
+
+.section-left .main{
+    margin-left: 2rem;
+}
+.section-left .main .container-search{
+    display: flex;
+    width: 30rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    position: fixed;
+    background: rgb(0, 0, 0);
+    height: 2.5rem;
+    z-index: 99;
+}
+
+
+
+.section-left .main .container-search .search input{
+    width: 18rem;
+}
+.section-left .main .container-search .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+    background: rgb(32, 35, 39);
+    border-radius: 23px;
+    position: fixed;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-left .main .container-search .search.focused {
+    border: .11rem solid rgb(29, 155, 240); /* تغيير الإطار عند التركيز */
+}
+.section-left .main .container-search .search.focused i{
+    color: rgb(29, 155, 240);
+}
+.section-left .main .container-search .search input{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-left: 0.6rem;
+}
+
+.section-left .main .container-search .search .fa-circle-xmark {
+    display: none; /* افتراضيًا مخفي */
+    font-size: 1.5rem;
+}
+
+.section-left .main .container-search .search.xmark .fa-circle-xmark {
+    display: flex; /* يظهر عندما تكون الفئة xmark مضافة إلى search */
+}
+
+.section-left .main .container-search .search input:focus{
+    outline: none;
+}
+
+.section-left .main .container-search .search i{
+    color: rgb(100, 100, 100);
+}
+
+.section-left .main .ads{
+    width: 20rem;
+    border: .11rem solid rgb(100, 100, 100);
+    margin-top: 3.8rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.section-left .main .ads h1{
+    font-weight: 700;
+}
+
+.section-left .main .ads p{
+    font-size: .9rem;
+    
+}
+
+.section-left .main .ads div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29, 155, 240);
+    color: #fff;
+    border-radius: 20px;
+    width:106.8px;
+    height: 36px;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.section-left .main .div-trends{
+    border: .11rem solid rgb(100, 100, 100);
+    border-radius: 15px;
+    width: 22rem;
+    margin-top: 1rem;
+    
+}
+
+.section-left .main .div-trends .box-trend:hover{
+    background: rgb(25, 25, 25);
+}
+
+.section-left .main .div-trends .trends-title h1{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.section-left .main .div-trends .head-trend{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.section-left .main .div-trends .head-trend span{
+    color: rgb(100, 100, 100);
+    font-size: .74rem;
+    font-weight: 500;
+    padding-top: .6rem;
+}
+
+.section-left .main .div-trends .container-trends .box-trend{
+    width: 91%;
+    height: 82px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-bottom: .6rem;
+}
+
+.section-left .main .div-trends .container-trends .box-trend .trend p{
+    font-size: .9rem;
+}
+
+.section-left .main .div-trends .container-trends .box-trend .usings p{
+    color: rgb(100, 100, 100);
+    font-size: .74rem;
+    font-weight: 500;
+}
+.section-left .main .div-trends .container-trends .note-trend{
+    padding-left: 1rem;
+    width: 95.6%;
+    height: 40px;
+}
+
+.section-left .main .div-trends .container-trends .note-trend:hover{
+    background: rgb(25, 25, 25);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.section-left .main .div-trends .container-trends .note-trend h2{
+    padding-top: .2rem;
+    color:  rgb(29, 155, 240);
+    font-weight: bold;
+    height: 100%;
+}
+
+.section-left .main .who-to-follow{
+    width: 21rem;
+    border: .11rem solid rgb(100, 100, 100); 
+    padding-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.section-left .main .who-to-follow .user-follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-left .main .who-to-follow .title-follow h1{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.section-left .main .who-to-follow .image {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-left .main .who-to-follow .image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section-left .main .who-to-follow .user-follow .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: .5rem;
+}
+
+.section-left .main .who-to-follow .user-follow .info .name{
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.section-left .main .who-to-follow .user-follow .info .name:hover{
+    text-decoration: underline;
+}
+
+.section-left .main .who-to-follow .user-follow .info .user{
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+}
+
+.section-left .main .who-to-follow .user-follow .btn-follow{
+    margin-right: 1rem;
+    background: rgb(239, 243, 244);
+    border-radius: 20px;
+    width: 120.8px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-left .main .who-to-follow .user-follow .btn-follow h2{
+    width: 100%;
+    height: 1rem;
+    color: #0F1419;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.copy-right{
+    padding: .5rem;
+    margin-top: 1rem;
+    font-size: .7rem;
+    margin-bottom: 8rem;
+}
+
+.copy-right .top{
+    margin-bottom: 0.5rem;
+}
+
+
+.copy-right .top a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.copy-right .top a:hover{
+    text-decoration: underline;
+}
+
+.copy-right .bottom a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.copy-right .bottom a:hover{
+    text-decoration: underline;
+}
+.copy-right .bottom .copy:hover{
+    text-decoration: none;
+}
+
+
+
+
